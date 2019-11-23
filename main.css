@@ -1,0 +1,67 @@
+:root {
+  --main-bg-color: #e27d60;
+  --secondary-bg-color: #85dcba;
+  --secondary-footer-color: #c38d9e;
+  --footer-bg-color: #018774;
+  --link-hover: #37bfac;
+}
+
+.fa {
+  font-size: 35px;
+}
+
+#navbar {
+  background-color: var(--secondary-bg-color);
+}
+
+#welcome-section {
+  background-color: var(--main-bg-color);
+}
+
+#projects {
+  padding: 10px;
+  background-color: var(--secondary-footer-color);
+}
+
+.social-container {
+  display: flex;
+  background-color: var(--secondary-bg-color);
+  justify-content: center;
+}
+
+.social-btns {
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-btn {
+  color: var(--footer-bg-color);
+}
+
+.social-btn:hover {
+  color: var(--link-hover);
+}
+
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.background-dark {
+  background-color: darkgray;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--footer-bg-color);
+  font-size: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--link-hover);
+}
