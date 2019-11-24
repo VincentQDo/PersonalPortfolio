@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <!-- Nav bar -->
     <nav class="navbar navbar-expand-sm navbar-light" id="navbar">
       <button
         class="navbar-toggler d-lg-none"
@@ -35,45 +36,91 @@
       <div class="collapse navbar-collapse mx-auto" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="#welcome-section">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
         </form>
       </div>
     </nav>
+    <!-- End Nav bar -->
 
+    <!-- Welcome screen with name and introduction -->
     <div class="container-fluid background-dark" id="welcome-section">
         <div class="introduction">
           <h1>Hi, I am Vincent Do</h1>
           <p>Web Developer</p>
         </div>
     </div>
+    <!-- End Welcome screen with name and introduction -->
 
-    <div id="projects">
+    <!-- Project section -->
+    <div id="projects" class="container-fluid">
       <h2 class="introduction">Projects</h2>
-      <div class="project-tile">
-        Project 1 here
+      <div class="row">
+        <div class="project-tile col-lg">
+          <div class="card">
+              <div class="card-header">
+                  <a target="_blank" class="project-link h4" 
+                href="https://codepen.io/vincentqdo/full/YmxxEY" >Landing Page</a>
+              </div>
+            <div class="card-body">
+              <p class="card-text">
+                &lt;Img&gt;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-tile col-lg">
+          <div class="card">
+            <div class="card-header">
+                <a target="_blank" class="project-link h4" 
+                  href="https://codepen.io/vincentqdo/full/NQRWWP" >
+                  Tribute Page
+                </a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                &lt;Img&gt;
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-tile col-lg">
+          <div class="card">
+              <div class="card-header">
+                  <a target="_blank" class="project-link h4" 
+                href="https://codepen.io/vincentqdo/full/LwLVrK" >Survey Form</a>
+              </div>
+            <div class="card-body">
+              <p class="card-text">
+                &lt;Img&gt;
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- End Project section -->
 
-
-
+    <!-- Footer with social buttons -->
     <footer>
       <div class="social-container">
         <ul class="social-btns">
-          <li class="nav-item"><a href=""><i class="fa fa-github-square nav-link social-btn" aria-hidden="true"></i></a></li>
-          <li class="nav-item"><a href=""><i class="fa fa-codepen nav-link social-btn" aria-hidden="true"></i></a></li>
-          <li class="nav-item"><a href=""><i class="fa fa-linkedin-square nav-link social-btn" aria-hidden="true"></i></a></li>
-          <li class="nav-item"><a href=""><i class="fa fa-envelope nav-link social-btn" aria-hidden="true"></i></a></li>
+          <li class="nav-item"><a target="_blank" id="profile-link" href="https://github.com/VincentQDo?tab=repositories"><i class="fa fa-github-square nav-link social-btn" aria-hidden="true"></i></a></li>
+          <li class="nav-item"><a target="_blank" href="https://codepen.io/vincentqdo"><i class="fa fa-codepen nav-link social-btn" aria-hidden="true"></i></a></li>
+          <li class="nav-item"><a target="_blank" href="https://www.linkedin.com/in/vincent-quang-do/"><i class="fa fa-linkedin-square nav-link social-btn" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </footer>
-    
+    <!-- End Footer with social buttons -->
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

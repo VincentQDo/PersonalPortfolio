@@ -3,7 +3,13 @@
   --secondary-bg-color: #85dcba;
   --secondary-footer-color: #c38d9e;
   --footer-bg-color: #018774;
-  --link-hover: #37bfac;
+  --link-hover: #007a7c;
+  --link-color: #002627;
+  --link-btn-transition-duration: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .fa {
@@ -16,10 +22,12 @@
 
 #welcome-section {
   background-color: var(--main-bg-color);
+  color: #360000;
 }
 
 #projects {
   padding: 10px;
+  color: #3d1410;
   background-color: var(--secondary-footer-color);
 }
 
@@ -38,7 +46,8 @@
 }
 
 .social-btn {
-  color: var(--footer-bg-color);
+  color: var(--link-color);
+  transition: var(--link-btn-transition-duration);
 }
 
 .social-btn:hover {
@@ -58,10 +67,49 @@
 }
 
 .navbar .navbar-nav .nav-link {
-  color: var(--footer-bg-color);
+  color: var(--link-color);
   font-size: 20px;
+  transition-duration: var(--link-btn-transition-duration);
 }
 
 .navbar .navbar-nav .nav-link:hover {
   color: var(--link-hover);
+}
+
+#projects .row .project-tile .card {
+  border: 0px;
+}
+
+#projects .row .project-tile .card .card-header {
+  background-color: #3d1410;
+  text-align: center;
+}
+
+#projects .row .project-tile .card .card-header .project-link {
+  color: var(--secondary-footer-color);
+  text-decoration: none;
+  transition-duration: var(--link-btn-transition-duration);
+  position: relative;
+}
+
+#projects .row .project-tile .card .card-header .project-link::after {
+  content: "";
+  border-top: 0.1em solid var(--secondary-footer-color);
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -0.1em;
+  width: 0;
+  height: 2px;
+  transition: var(--link-btn-transition-duration);
+}
+
+#projects .row .project-tile .card .card-header .project-link:hover {
+  text-decoration: none;
+  color: pink;
+}
+
+#projects .row .project-tile .card .card-header .project-link:hover::after {
+  width: 100%;
+  border-color: pink;
 }
