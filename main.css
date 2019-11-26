@@ -1,3 +1,8 @@
+/* * This is a higlight
+? This is a query
+TODOs
+! this is an alert */
+/* -------------------- Generic -------------------- */
 :root {
   --link-hover: 0.6;
   --link-btn-transition-duration: 0.3s;
@@ -10,11 +15,44 @@ html {
 body {
   margin-top: 70px;
 }
+.introduction {
+  text-align: center;
+}
 
-.social-container {
+.my-container {
   display: flex;
   justify-content: center;
 }
+
+.my-container-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* -------------------- Generic -------------------- */
+
+/* -------------------- Welcome section -------------------- */
+#welcome-section {
+  background-color: lightgray;
+  min-height: 500px;
+}
+
+/* -------------------- Welcome section -------------------- */
+
+/* -------------------- Portfolio Section -------------------- */
+.portfolio-section {
+  /* ! REMOVE border property after finish */
+  min-height: 500px;
+}
+
+.project-tile {
+  margin: 5px;
+  border: 1px solid black;
+}
+/* -------------------- Portfolio Section -------------------- */
+
+/* -------------------- Social buttons -------------------- */
 
 .social-btns {
   list-style: none;
@@ -32,18 +70,4 @@ body {
 .social-btn:hover {
   opacity: var(--link-hover);
 }
-
-.portfolio-section {
-  /* remove border after finish */
-  border: 1px solid black;
-  min-height: 500px;
-}
-
-.introduction {
-  text-align: center;
-}
-
-.project-tile {
-  margin: 5px;
-  border: 1px solid black;
-}
+/* -------------------- Social buttons -------------------- */
