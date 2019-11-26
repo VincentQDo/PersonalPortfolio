@@ -45,7 +45,10 @@ html {
 }
 
 .navbar-brand {
-  margin-left: 15px;
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 35px;
+  padding: 0;
+  margin-left: 25px;
   color: white !important;
 }
 
@@ -53,6 +56,10 @@ html {
   padding: 17px;
   color: white;
   transition: var(--link-btn-transition-duration);
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link-last {
+  margin-right: 17px;
 }
 
 .navbar .collapse .nav-link:hover {
